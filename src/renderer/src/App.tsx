@@ -20,27 +20,17 @@ function App(): JSX.Element {
       <div className="links">
         <div className="link-item">
           <a target="_blank" href="https://evite.netlify.app" rel="noopener noreferrer">
-            Documentation
+            Created from electron-vite
           </a>
         </div>
         <div className="link-item link-dot">•</div>
         <div className="link-item">
           <a
             target="_blank"
-            href="https://github.com/alex8088/electron-vite"
+            href="https://github.com/leny-mi/electron-web-react"
             rel="noopener noreferrer"
           >
-            Getting Help
-          </a>
-        </div>
-        <div className="link-item link-dot">•</div>
-        <div className="link-item">
-          <a
-            target="_blank"
-            href="https://github.com/alex8088/quick-start/tree/master/packages/create-electron"
-            rel="noopener noreferrer"
-          >
-            create-electron
+            Issues
           </a>
         </div>
       </div>
@@ -48,11 +38,11 @@ function App(): JSX.Element {
       <div className="features">
         <div className="feature-item">
           <article>
-            <h2 className="title">Configuring</h2>
+            <h2 className="title">Electron Configuring</h2>
             <p className="detail">
               Config with <span>electron.vite.config.ts</span> and refer to the{' '}
               <a target="_blank" href="https://evite.netlify.app/config/" rel="noopener noreferrer">
-                config guide
+                electron-vite config guide
               </a>
               .
             </p>
@@ -68,7 +58,7 @@ function App(): JSX.Element {
                 href="https://evite.netlify.app/guide/hmr-in-renderer.html"
                 rel="noopener noreferrer"
               >
-                docs
+                electron-vite docs
               </a>
               .
             </p>
@@ -76,37 +66,28 @@ function App(): JSX.Element {
         </div>
         <div className="feature-item">
           <article>
-            <h2 className="title">Hot Reloading</h2>
+            <h2 className="title">Run Web and Electron</h2>
             <p className="detail">
-              Run{' '}
-              <span>
-                {"'"}electron-vite dev --watch{"'"}
-              </span>{' '}
-              to enable. See{' '}
-              <a
-                target="_blank"
-                href="https://evite.netlify.app/guide/hot-reloading.html"
-                rel="noopener noreferrer"
-              >
-                docs
-              </a>
-              .
+              Run{' '}<span>{"'"}yarn web-dev{"'"}</span>{' '} 
+              or 
+              {' '}<span>{"'"}yarn electron-dev{"'"}</span>{' '}
+              to enable. See {' '}<span>{"'"}package.json{"'"}</span>{' '} for more commands.
             </p>
           </article>
         </div>
         <div className="feature-item">
           <article>
-            <h2 className="title">Debugging</h2>
+            <h2 className="title">Distribution</h2>
             <p className="detail">
-              Check out <span>.vscode/launch.json</span>. See{' '}
-              <a
-                target="_blank"
-                href="https://evite.netlify.app/guide/debugging.html"
-                rel="noopener noreferrer"
-              >
-                docs
-              </a>
-              .
+              Run {' '}<span>{"'"}yarn electron-build:linux{"'"}</span>{' '} to build for Electron/Linux. See {' '}<span>{"'"}package.json{"'"}</span>{' '} for more commands.
+            </p>
+          </article>
+        </div>
+        <div className="feature-item">
+          <article>
+            <h2 className="title">The Unlicense</h2>
+            <p className="detail">
+              Do whatever you want with this project.
             </p>
           </article>
         </div>
@@ -120,24 +101,13 @@ function App(): JSX.Element {
                 href="https://evite.netlify.app/guide/source-code-protection.html"
                 rel="noopener noreferrer"
               >
-                docs
+                electron-vite docs
               </a>
               .
             </p>
           </article>
         </div>
-        <div className="feature-item">
-          <article>
-            <h2 className="title">Packaging</h2>
-            <p className="detail">
-              Use{' '}
-              <a target="_blank" href="https://www.electron.build" rel="noopener noreferrer">
-                electron-builder
-              </a>{' '}
-              and pre-configured to pack your app.
-            </p>
-          </article>
-        </div>
+        
       </div>
     </div>
   )
